@@ -3,11 +3,11 @@ package boardgame;
 public class Position {
 	
 	private int row;
-	private int colums;
+	private int column;
 	
-	public Position(int row, int colums) {
+	public Position(int row, int column) {
 		this.row = row;
-		this.colums = colums;
+		this.column = column;
 	}
 
 	public int getRow() {
@@ -18,15 +18,20 @@ public class Position {
 		this.row = row;
 	}
 
-	public int getColums() {
-		return colums;
+	public int getColumn() {
+		return column;
 	}
 
-	public void setColums(int colums) {
-		this.colums = colums;
+	public void setColums(int column) {
+		this.column = column;
+	}
+	
+	public void setValeu(int row, int column) {
+		this.row = row;
+		this.column = column;
 	}
 	@Override
 	public String toString() {
-		return row + ", " + colums;
+		return row + ", " + column;
 	}
 }
